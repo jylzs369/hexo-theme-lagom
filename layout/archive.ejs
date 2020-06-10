@@ -1,0 +1,20 @@
+<% var sortType = theme.archive.sort_updated ? 'updated' : 'date' %>
+<% var year = 0 %>
+<div id="archive" class="list">
+  <dl class="list__list">
+    <% page.posts.sort(sortType, 'desc').each(post => { %>
+      <% var itemYear = date(post[sortType], 'YYYY') - 0 %>
+      <% if (year !== itemYear) { %>
+        <% year = itemYear %>
+        <dt class="list__title"><%= year %></dt>
+      <% } %>
+    <dd class="list__item">
+      <%- partial('_partial/post/date', { post: post, className: 'list__date' }) -%>
+      <a href="<%- url_for(post.path) -%>">
+      <%= `${post.title}${post.subtitle ? ' ' + post.subtitle : ''}` -%>
+      </a>
+    </dd>
+    <% }) %>
+  </dl>
+</div>
+<%- partial('_partial/paginator') %>

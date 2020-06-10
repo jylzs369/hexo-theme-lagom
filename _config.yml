@@ -1,0 +1,98 @@
+##################################################
+# 内容 CONTENT
+##################################################
+
+# 页面标题
+page_title: Hexo Theme Lagom
+
+# 配置导航菜单 MENU
+# 通过key引用链接进行跳转，目前支持中英文
+menu:
+  home: /
+  archives: /archives/
+  categories: /categories/
+  tags: /tags/
+  about: /about/
+
+# 配置社交平台链接 SOCIAL LINKS
+social_links:
+  github:
+    link: https://github.com/jylzs369
+    icon: '&#xe6b7;'
+  mail:
+    link: mailto:jylzs369@163.com
+    icon: '&#xe61a;'
+  rss:
+    link: /atom.xml
+    icon: '&#xe640;'
+
+# 配置标签云
+# 选项: https://hexo.io/docs/helpers.html#tagcloud
+tags_overview: false
+
+# 配置主页模板 INDEX TEMPLATE
+# 选项:
+#   - show_all_posts: 是否展示所有文章
+#   - post_count: 是否仅显示N篇文章
+#   - sort_updated: 是否按更新时间排序/否则通过创建时间排序
+index:
+  show_all_posts: false
+  post_count: 3
+  sort_updated: false
+
+# 配置归档模板 ARCHIVE TEMPLATE
+# 选项:
+#   - sort_updated: 是否按更新时间排序/否则通过创建时间排序
+archive:
+  sort_updated: false
+
+# 配置文章模板 POST TEMPLATE
+# 选项:
+#   - show_updated: 展示修改时间
+post:
+  show_updated: false
+
+# 配置版权 COPYRIGHT
+# end_year未设置则默认设置当前年份
+copyright:
+  start_year: 2020
+  end_year:
+
+##################################################
+# 外观 APPEARANCE
+##################################################
+
+# 配置网站图标 FAVICON
+# 支持以下三端：
+#   - desktop:  favion.ico
+#   - android: 192x192 PNG
+#   - apple:  180x180 PNG
+# 在线生成工具： https://www.favicon.cc/
+favicon:
+  desktop:
+    url: /images/favicon.ico
+  android:
+    url: /images/favicon-android.png
+  apple:
+    url: /images/favicon-apple.png
+
+##################################################
+# 插件 PLUGINS
+##################################################
+
+# 配置评论模块 COMMENTS
+valine:
+ appid: '' #Leancloud应用的appId
+ appkey: '' #Leancloud应用的appKey
+ placeholder: ''  #评论框占位符
+ visitor: true  #阅读量统计
+
+# 配置谷歌分析 GOOGLE ANALYSIS
+google_analytics:
+  enabled: false
+  id: ''
+
+# 配置百度分析 BAIDU ANALYSIS
+baidu_analytics:
+  enabled: false
+  id: ''

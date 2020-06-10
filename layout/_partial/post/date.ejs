@@ -1,0 +1,8 @@
+<% if (post.date) { %>
+<time class="<%= className %>" datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
+  <% if (is_post()) { %>
+  <i class="blogfont">&#xedff;</i>
+  <% } %>
+  <%= date(post.date, is_post() ? `${config.date_format} ${config.time_format}` : config.date_format ) %>
+</time>
+<% } %>

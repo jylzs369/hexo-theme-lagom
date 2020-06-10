@@ -1,0 +1,36 @@
+menu:
+  home: 主页
+  categories: 专题
+  archives: 归档
+  works: 作品
+  tags: 标签
+  search: 检索
+  about: 关于
+
+footer:
+  copyright: Copyright
+
+index:
+  more: 更多文章
+
+post:
+  desktop:
+    previous: 前篇
+    next: 后篇
+    back_to_top: 回到顶部
+    share: 分享文章
+  mobile:
+    menu: 菜单
+    toc: 目录
+    back_to_top: 回顶
+    share: 分享
+
+search:
+  search: 搜索...
+  no_results: 抱歉，没有符合您搜索条件的结果。请换其它关键词再试。
+
+pagination:
+  page: Page %d of %d
+
+comments:
+  no_js: 加载评论需要在浏览器启用 JavaScript 脚本支持。

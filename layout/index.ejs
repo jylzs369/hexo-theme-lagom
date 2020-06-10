@@ -1,0 +1,11 @@
+<section class="block">
+  <% var lastestPost = site.posts.sort('date', 'desc').limit(theme.index.post_count || 5) %>
+  <% lastestPost.forEach(post => { %>
+  <div class="block__item">
+    <%- partial('_partial/post/date', { post: post, className: 'block__date' }) %>
+    <a class="block__title" href="<%- url_for(post.path) %>"><%= post.title %> <%= post.subtitle %></a>
+    <p class="block__excerpt"><%= post.excerpt %></p>
+  </div>
+  <% }) %>
+  <a class="block__more" href="<%- url_for(theme.menu.archives) %>"><%= __('index.more') %> </a>
+</section>

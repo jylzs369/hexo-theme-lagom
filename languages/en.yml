@@ -1,0 +1,36 @@
+nav:
+  home: Home
+  categories: Topics
+  archives: Archives
+  works: Works
+  tags: Tags
+  search: Search
+  about: About
+
+footer:
+  copyright: Copyright
+
+index:
+  more: More
+
+post:
+  desktop:
+    previous: Previous
+    next: Next
+    back_to_top: Top
+    share: Share post
+  mobile:
+    menu: Menu
+    toc: TOC
+    back_to_top: Top
+    share: Share
+
+search:
+  search: Search...
+  no_results: No results found.
+
+pagination:
+  page: Page %d of %d
+
+comments:
+  no_js: Please enable JavaScript to view the comments.

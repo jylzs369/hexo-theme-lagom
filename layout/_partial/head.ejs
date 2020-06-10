@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <% if (theme.favicon) { %>
+    <% if (theme.favicon.desktop) { %>
+    <link rel="shortcut icon" href="<%= url_for(theme.favicon.desktop.url) %> ">
+    <% } %>
+    <% if (theme.favicon.android) { %>
+    <link rel="icon" type="image/png" href="<%= url_for(theme.favicon.android.url) %> " sizes="192x192">
+    <% } %>
+    <% if (theme.favicon.apple) { %>
+    <link rel="apple-touch-icon" href="<%= url_for(theme.favicon.apple.url) %> " sizes="180x180">
+    <% } %>
+  <% } %>
+  <!-- title -->
+  <title><%= page_title() %> </title>
+  <!-- styles -->
+  <%- partial('_partial/styles', {}, { cache: true }) %>
+  <!-- rss -->
+  <% if (config.feed && config.feed.path) { %>
+  <link rel="alternate" href="<%= url_for(config.feed.path) %>" title="<%= config.title %>" type="application/atom+xml" />
+  <% } %>
+</head>

@@ -1,0 +1,16 @@
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <%- partial('_partial/post/title', { post: page }) %>
+  <%- partial('_partial/post/aside', { post: page }) %>
+  <div class="post__content" itemprop="articleBody">
+    <%- page.content %>
+  </div>
+  <% if (theme.valine && theme.valine.appid && theme.valine.appkey) { %>
+  <section id="comments" class="comments">
+    <%- partial('_plugins/valine', {
+      key: page.slug,
+      title: page.title,
+      url: config.url+url_for(page.path)
+    }) %>
+  </section>
+  <% } %>
+</article>

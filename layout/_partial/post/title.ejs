@@ -1,0 +1,15 @@
+<header class="post__header">
+  <h1 class="post__title"><%= post.title %></h1>
+  <% if (post.subtitle) { %>
+  <h2 class="post__subtitle"><%= post.subtitle %></h2>
+  <% } %>
+  <% if (post.reference) { %>
+  <h3 class="post__reference"><a href="<%= post.refer_link  %>"><%= post.reference %></a></h3>
+  <% } %>
+  <div class="post__meta">
+    <%- partial('_partial/post/date', { post: post, className: 'post__date' }) %>
+    <%- partial('_partial/post/category', { post: post }) %>
+    <%- partial('_partial/post/tag', { post: post }) %>
+    <%- partial('_partial/post/stat', { post: post }) %>
+  </div>
+</header>

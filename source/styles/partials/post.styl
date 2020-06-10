@@ -1,0 +1,110 @@
+.post
+  text-align left
+  margin: 0 12vw space-normal
+  min-width 900px
+
+.post__title
+.post__subtitle
+.post__reference
+  font-family title-font
+  line-height 1.5
+
+.post__title
+  font-size font-title
+
+.post__subtitle
+  font-size font-largest
+  margin-bottom space-base
+
+.post__reference
+  font-size font-large
+  a
+    color font-color-light
+    &:hover
+    &:active
+      text-decoration underline
+
+.post__meta
+  font font-normal/2.5 aside-font-en
+  margin-bottom space-normal
+
+.post__date
+  margin-right space-large
+  letter-spacing 1px
+
+.post__category
+.post__tag
+.post__stat
+  display inline-block
+  margin-right space-large
+
+.post__category .category-link
+.post__tag .tag-link
+  letter-spacing 2px
+  &:hover
+    cursor pointer
+    color font-color-light
+
+.post__stat .leancloud-visitors-count
+  letter-spacing 2px
+
+.post__aside
+  position fixed
+  top 62px
+  left calc(30vw + 830px)
+  right space-normal
+
+.post__actions
+  margin-bottom space-small
+
+.post__share
+.post__top
+  color font-color-light
+  margin-right space-small
+  &:hover
+    color font-color-normal
+  .blogfont
+    font-size font-normal
+    margin-right 2px
+
+.post__toc-text
+  color font-color-light
+  font font-smaller/1.75 aside-font-en
+  transition color .2s
+  &:hover
+    color font-color-dark
+
+.post__toc-level-2
+  &::before
+    content: '·'
+    margin-right: space-small
+
+.post__toc-level-3
+  text-indent 1em
+
+.post__content
+  font font-normal/2 text-font
+  h2
+    margin-bottom space-base
+  code
+    font-family text-font-en
+  figure
+    border border-width dotted border-color
+    border-left 2px solid border-color
+    border-radius border-radius
+    padding space-base space-normal
+    margin-bottom space-base
+    overflow auto
+  pre
+  .gutter
+    font font-normal/2 code-font
+    letter-spacing 1px
+  pre
+    padding-right space-normal
+  .gutter
+    width 20px
+  p
+    margin-bottom space-normal
+    color font-color-normal
+    a
+      text-decoration underline

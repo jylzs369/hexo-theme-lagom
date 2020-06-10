@@ -1,0 +1,10 @@
+<footer id="footer">
+  <%= __('footer.copyright') %> &copy;
+  <%= (theme.copyright && theme.copyright.end_year) ? theme.copyright.end_year : date(new Date(), 'YYYY') %>
+  <%= config.author || config.title %>
+  <% if (theme.social_links) { %>
+  <% Object.keys(theme.social_links).forEach(item => { %>
+    <a class="social-links" href="<%= theme.social_links[item].link %>"><i class="blogfont"><%- theme.social_links[item].icon %> </i></a>
+  <% }) %>
+  <% } %>
+</footer>

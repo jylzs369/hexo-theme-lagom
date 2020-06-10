@@ -1,0 +1,37 @@
+.list
+  width 40vw
+  margin 0 auto
+  text-align left
+
+.list__title
+  font bold font-largest/1 title-font
+  color font-color-normal
+  margin space-large 0
+  letter-spacing 3px
+  cursor pointer
+  &::first-letter
+    color font-color-light
+  &.closed + .list__list
+    animation slideUp .2s forwards
+
+.list__count
+  font bold font-normal/1 aside-font-en
+  vertical-align super
+
+.list__item
+  display flex
+  align-items: baseline;
+  margin-bottom space-normal
+  border-bottom border-width dashed border-color
+  a
+    flex 1
+    font font-normal/1.5 title-font
+    letter-spacing 1px
+    &:hover
+      text-decoration underline
+
+.list__date
+  flex-basis 100px
+  font font-smaller/1.5 text-font-en
+  color font-color-normal
+  letter-spacing 2px

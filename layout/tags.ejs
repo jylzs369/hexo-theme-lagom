@@ -1,0 +1,18 @@
+<div id="tag" class="list">
+  <% site.tags.each(tag => { %>
+  <h3 class="list__title">
+    <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+    <span class="list__count"><%= tag.length %></span>
+  </h3>
+  <ul class="list__list">
+    <% tag.posts.sort('date', 'desc').each(post => { %>
+    <li class="list__item">
+      <%- partial('_partial/post/date', { post: post, className: 'list__date' }) -%>
+      <a href="<%- url_for(post.path) -%>">
+      <%= `${post.title}${post.subtitle ? ' ' + post.subtitle : ''}` -%>
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+  <% }) %>
+</div>

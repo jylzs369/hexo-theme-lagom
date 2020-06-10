@@ -1,0 +1,79 @@
+@import './var'
+
+@font-face
+  font-family: 'Blogfont';  /* project id 1842100 */
+  src: url('//at.alicdn.com/t/font_1842100_he8ga4uxvyo.eot');
+  src: url('//at.alicdn.com/t/font_1842100_he8ga4uxvyo.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1842100_he8ga4uxvyo.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1842100_he8ga4uxvyo.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1842100_he8ga4uxvyo.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1842100_he8ga4uxvyo.svg#Blogfont') format('svg');
+
+.blogfont
+  font-family "Blogfont" !important
+  font-size font-normal
+  font-style normal
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+*
+  padding space-none
+  margin space-none
+  box-sizing border-box
+
+a
+  transition color .2s
+
+a
+alink
+ahover
+aactive
+avisited
+  color font-color-dark
+  text-decoration none
+
+img
+  max-width 100%
+
+ul
+li
+  list-style none
+
+body
+  width 100vw
+  min-width 920px
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  color font-color-dark
+  overflow-x hidden
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+  width 8px
+  height 8px
+  background-color #fff
+
+/*定义滚动条的轨道，内阴影及圆角*/
+::-webkit-scrollbar-track
+  -webkit-box-shadow inset 0 0 5px rgba(0, 0, 0, .1)
+  border-radius border-radius
+  background-color #f9f9f9
+
+/*定义滑块，内阴影及圆角*/
+::-webkit-scrollbar-thumb
+  border-radius border-radius
+  -webkit-box-shadow inset 0 0 5px rgba(0, 0, 0, .3)
+  background-color font-color-light
+
+
+@import './partials/animate'
+@import './partials/header'
+@import './partials/main'
+@import './partials/footer'
+@import './partials/list'
+@import './partials/post'
+@import './partials/paginator'
+@import './partials/index'
+@import './partials/valine'

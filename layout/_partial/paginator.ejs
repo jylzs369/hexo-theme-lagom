@@ -1,0 +1,9 @@
+<% if (page.total > 1) { %>
+<div class="pagination">
+  <%- paginator({
+    prev_text: '<i class="blogfont">&#xe82e;</i>',
+    next_text: '<i class="blogfont">&#xee00;</i>',
+    escape: false
+  }) %>
+</div>
+<% } %>

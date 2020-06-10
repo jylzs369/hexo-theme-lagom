@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html <%=` lang=${config.language || 'zh-CN'}` %>>
+  <%- partial('_partial/head', {}, { cache: true }) %>
+  <body>
+    <%- partial('_partial/header', {}, { cache: false }) %>
+    <main>
+      <%- body %>
+    </main>
+    <%- partial('_partial/footer', {}, { cache: true }) %>
+    <%- partial('_partial/scripts', {}, { cache: true }) %>
+  </body>
+</html>

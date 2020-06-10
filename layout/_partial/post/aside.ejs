@@ -1,0 +1,11 @@
+<aside class="post__aside">
+  <div class="post__actions">
+    <a id="backTop" class="post__top" href="javascript:">
+      <i class="blogfont">&#xe6b1;</i><!-- <%= __('post.desktop.back_to_top') %> -->
+    </a>
+    <a id="share" class="post__share" href="javascript:">
+      <i class="blogfont">&#xe6c1;</i>
+    </a>
+  </div>
+  <%- toc(post.content, { class: 'post__toc', list_number: false }) %>
+</aside>
