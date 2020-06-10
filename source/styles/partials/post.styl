@@ -1,7 +1,6 @@
 .post
   text-align left
-  margin: 0 12vw space-normal
-  min-width 900px
+  margin: 0 0 space-normal
 
 .post__title
 .post__subtitle
@@ -108,3 +107,18 @@
     color font-color-normal
     a
       text-decoration underline
+
+@media screen and (max-width: 1200px)
+  .post__title
+  .post__subtitle
+  .post__reference
+    line-height 1.2
+
+@media screen and (max-width: 720px)
+  .post__content
+    line-height: 1.5
+    pre
+    .gutter
+      line-height: 1.5
+  .post__aside
+    display none

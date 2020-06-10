@@ -3,6 +3,7 @@
   <nav class="menu menu--right">
   <% } else { %>
   <nav class="menu">
+  <% } %>
     <a class="menu__item" href="<%- url_for(theme.menu.home) %>"><%= __('menu.home') %></a>
     <a class="menu__item" href="<%- url_for(theme.menu.archives) %>"><%= __('menu.archives') %></a>
     <a class="menu__item" href="<%- url_for(theme.menu.categories) %>"><%= __('menu.categories') %></a>
@@ -10,5 +11,4 @@
     <!-- <a class="menu__item" href="<%- url_for(theme.menu.works) %>"><%= __('menu.works') %></a> -->
     <!-- <a class="menu__item" href="<%- url_for(theme.menu.about) %>"><%= __('menu.about') %></a> -->
   </nav>
-  <% } %>
 </header>
