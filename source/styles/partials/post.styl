@@ -24,6 +24,8 @@
       text-decoration underline
 
 .post__meta
+  display flex
+  flex-wrap: wrap
   font font-normal/2.5 aside-font-en
   margin-bottom space-normal
 
@@ -34,7 +36,6 @@
 .post__category
 .post__tag
 .post__stat
-  display inline-block
   margin-right space-large
 
 .post__category .category-link
@@ -50,8 +51,8 @@
 .post__aside
   position fixed
   top 62px
-  left calc(30vw + 830px)
   right space-normal
+  max-width 20rem
 
 .post__actions
   margin-bottom space-small
@@ -112,8 +113,15 @@
   .post__title
   .post__subtitle
   .post__reference
-    line-height 1.2
-
-@media screen and (max-width: 720px)
+    line-height 1.5
+  .post__title
+    font-size font-larger
+  .post__subtitle
+    font-size 1.8rem
+  .post__reference
+    font-size font-normal
+  .post__meta
+    font-size font-smallest
+    line-height 1.75
   .post__aside
     display none
