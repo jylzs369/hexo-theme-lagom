@@ -26,10 +26,6 @@ social_links:
     link: /atom.xml
     icon: '&#xe640;'
 
-# 配置标签云
-# 选项: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: false
-
 # 配置主页模板 INDEX TEMPLATE
 # 选项:
 #   - show_all_posts: 是否展示所有文章
